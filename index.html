@@ -1,0 +1,93 @@
+Creating a web page with HTML, CSS, and JavaScript in one file is quite extensive. However, I can provide you with a basic example that you can use as a starting point and then customize further as per your requirements. Here's a simple example for the QTQ restaurant web page. 
+
+#### HTML, CSS, and JavaScript in One File
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f2f2f2;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+    .menu-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+    }
+    .menu-item {
+      text-align: center;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 200px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+  <script>
+    function submitForm() {
+      alert('Form submitted! Thank you for your feedback.');
+    }
+  </script>
+  <title>QTQ Restaurant</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="menu-section">
+    <div class="menu-item">
+      <img src="menu-item-1.jpg" alt="Menu Item 1">
+      <h3>Menu Item 1</h3>
+      <p>$10.99</p>
+      <p>Description of menu item 1.</p>
+    </div>
+    <div class="menu-item">
+      <img src="menu-item-2.jpg" alt="Menu Item 2">
+      <h3>Menu Item 2</h3>
+      <p>$12.99</p>
+      <p>Description of menu item 2.</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 QTQ Restaurant</p>
+    <form onsubmit="submitForm()">
+      <h3>Feedback Form</h3>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your feedback..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </footer>
+</body>
+</html>
+```
+
+This code provides a basic structure for the web page. You can further enhance the styling and functionality as per your specific requirements. If you need more advanced features or a more detailed design, it would be best to use separate files for HTML, CSS, and JavaScript and link them together.
